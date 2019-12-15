@@ -55,8 +55,15 @@ void vectorDeleteValues(std::vector<std::vector<int>>& abc,int &pos)
 			a += pos;
 			abc.erase(a);
 		}
+		
+		/*You Can also use advance() method to work with iterator when you need to iterate over any conatiner
+		 advance(iterator,count/increment value) 
+		 ie. advance(a,4) ; 
+		 Using  + operator is not the only option */
 
 }
+
+
 
 
 int main()
@@ -77,24 +84,6 @@ int main()
 
 	//Retrieve vector within vector values after deleting a value
 	vectorDisplayValues(abc);
-
-
-
-	
-
-	
-
-
-	
-
-
-
-
-
-
-
-	
-
 
 	return 0;
 }
