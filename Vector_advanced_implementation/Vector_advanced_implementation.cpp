@@ -1,6 +1,7 @@
 /*Name : ping-devsky
 Date  : 15-12-2019
 vector implementation with multiple vector within vector and many more containers within vector */
+
 #include<iostream>
 #include<vector>
 
@@ -44,6 +45,20 @@ void vectorDisplayValues(std::vector<std::vector<int>>& abc)
 
 }
 
+
+void vectorDeleteValues(std::vector<std::vector<int>>& abc,int &pos)
+{
+		std::vector<std::vector<int>>::iterator a;
+		a = abc.begin();
+		if (pos <= abc.size())
+		{
+			a += pos;
+			abc.erase(a);
+		}
+
+}
+
+
 int main()
 {
 	
@@ -54,6 +69,18 @@ int main()
 
 	//Retrieve vector within vector values
 	vectorDisplayValues(abc);
+
+	//Delete vector within vector values
+	int pos = 4;
+	vectorDeleteValues(abc,pos);
+	std::cout << "\n\nAfter Deleting the value \n\n";
+
+	//Retrieve vector within vector values after deleting a value
+	vectorDisplayValues(abc);
+
+
+
+	
 
 	
 

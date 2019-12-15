@@ -1,2 +1,3 @@
 ﻿  Vector_advanced_implementation.cpp
+E:\STL - Standard Template Library\Vector_advanced_implementation\Vector_advanced_implementation.cpp(52,11): warning C4018: '<=': signed/unsigned mismatch
   Vector_advanced_implementation.vcxproj -> E:\STL - Standard Template Library\Vector_advanced_implementation\Debug\Vector_advanced_implementation.exe
